@@ -4,7 +4,7 @@
 
 <ul>
   <li class="basic-flow-box basic-flow-box--translate fragment"
-    data-fragment-index="  ">
+    data-fragment-index="1">
     Parse HTML + CSS
   </li>
   <li class="basic-flow-box basic-flow-box--arrow fragment"
