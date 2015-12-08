@@ -34,7 +34,7 @@ body {
 
 .reveal h1, .reveal h2, .reveal h3 {
   color: #fff;
-  font-family: 'brandon grotesque', 'Montserrat' sans-serif; }
+  font-family: 'brandon grotesque', 'Montserrat', sans-serif; }
 
 .reveal h4, .reveal h5, .reveal h6 {
   color: rgba(255, 255, 255, 0.5);
@@ -290,12 +290,17 @@ body {
   border-style: solid !important;
   border-width: 4px !important;
   color: #fff;
+  font-size: 75% !important;
   list-style: none;
   margin-bottom: 1rem !important;
   padding: 1rem 2rem !important;
   text-align: center;
 }
 
+.basic-flow-box--arrow {
+  border-color: transparent !important;
+  padding: 0.25rem 2rem !important;
+}
 .basic-flow-box--translate { border-color: #f2777a !important; }
 .basic-flow-box--construct { border-color: #ffcc66 !important; }
 .basic-flow-box--calculate { border-color: #6699cc !important; }

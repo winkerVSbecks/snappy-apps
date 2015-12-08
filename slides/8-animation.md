@@ -1,3 +1,4 @@
+<!-- .slide: data-background="#ffcc33" class="th-yellow" -->
 
 ### Can I Actually Animate Anything?
 
@@ -55,4 +56,12 @@ The process where each of the individual textures uploaded to the GPU is drawn o
 ### Warning
 
 Be-careful not to abuse these hacks.
+
+--
+
+### Scrolling
+
+- Debouncing scroll events
+- Disable `:hover` animations for better scrolling performance.
+
 

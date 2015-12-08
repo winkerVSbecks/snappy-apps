@@ -1,3 +1,23 @@
+<!-- .slide: data-background="#ffcc33" class="th-yellow" -->
+
+# Layout
+
+--
+
+### The geometry of a page. Where every element is and how big it is.
+
+![layout](img/re-layout.gif)
+
+--
+
+### Styles That Affect layout
+
+When the changes affect document contents, structure or element position, a relayout happens.
+
+[http://csstriggers.com](http://csstriggers.com)
+
+--
+
 ## Layout Thrashing
 
 When JavaScript reads/writes to the DOM multiple times causing re-layouts.
@@ -73,3 +93,31 @@ requestAnimationFrame(function() {
 ```
 
 <small>[from wilsonpage.co.uk/preventing-layout-thrashing](http://wilsonpage.co.uk/preventing-layout-thrashing)</small>
+
+--
+
+### Animating Layout Properties
+
+- The time required to perform layout calculations is directly proportional to the size of the visible DOM nodes.
+
+- Therefore, avoid animating properties that trigger re-layout.
+
+--
+
+### Animating Layout Properties
+
+- Cache all element properties (width, position, etc.) which are to be re-used.
+
+- Use offline element for DOM manipulations.
+
+- Batch your DOM manipulations.
+
+- Make this change as deep in the DOM tree as possible.
+
+- Minimize DOM manipulation.
+
+--
+
+## tldr;
+
+Animate only absolute/fixed positioned elements if you can. Avoid layout thrashing.
