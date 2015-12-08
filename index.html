@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Snappy Apps</title>
+
+    <meta name="description" content="A beginners guide to eliminating jank from your projects.">
+    <meta name="author" content="Varun Vachhar">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link href='http://fonts.googleapis.com/css?family=Esteban|Montserrat:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/simple.css" id="theme">
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="css/hljs.css">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown="slides/1-intro.md"
+          data-separator-vertical="^\n--\n$"></section>
+        <section data-markdown="slides/2-perf-matters.md"
+          data-separator-vertical="^\n--\n$"></section>
+        <section data-markdown="slides/3-basic-flow.md"
+          data-separator-vertical="^\n--\n$"></section>
+        <section data-markdown="slides/4-parsing.md"
+          data-separator-vertical="^\n--\n$"></section>
+        <section data-markdown="slides/5-render-tree.md"
+          data-separator-vertical="^\n--\n$"></section>
+        <section data-markdown="slides/6-layout.md"
+          data-separator-vertical="^\n--\n$"></section>
+        <section data-markdown="slides/7-paint.md"
+          data-separator-vertical="^\n--\n$"></section>
+        <section data-markdown="slides/8-animation.md"
+          data-separator-vertical="^\n--\n$"></section>
+        <section data-markdown="slides/9-tools-not-rules.md"
+          data-separator-vertical="^\n--\n$"></section>
+        <section data-markdown="slides/10-wrap-up.md"
+          data-separator-vertical="^\n--\n$"></section>
+      </div><!-- END slides -->
+    </div><!-- END reveal -->
+
+    <script src="reveal-js/head.min.js"></script>
+    <script src="reveal-js/reveal.js"></script>
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'slide',
+        backgroundTransition: 'concave',
+        dependencies: [{
+          src: 'reveal-js/classList.js',
+          condition: function() { return !document.body.classList; }
+        }, {
+          src: 'reveal-js/marked.js',
+          condition: function() {
+            return !!document.querySelector( '[data-markdown]' );
+          }
+        }, {
+          src: 'reveal-js/markdown.js',
+          condition: function() {
+            return !!document.querySelector( '[data-markdown]' );
+          }
+        }, {
+          src: 'reveal-js/highlight.js',
+          async: true,
+          callback: function() { hljs.initHighlightingOnLoad(); }
+        }]
+      });
+    </script>
+  </body>
+</html>
