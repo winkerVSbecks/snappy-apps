@@ -1,10 +1,10 @@
 <!-- .slide: data-background="#ffcc33" class="th-yellow" -->
 
-### Can I Actually Animate Anything?
+# The Easy Wins
 
 --
 
-### The Easy Wins
+### GPU Accelerated
 
 ![The Easy Wins](img/easy-wins.jpg)
 
@@ -63,5 +63,3 @@ Be-careful not to abuse these hacks.
 
 - Debouncing scroll events
 - Disable `:hover` animations for better scrolling performance.
-
-

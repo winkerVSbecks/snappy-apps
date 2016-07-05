@@ -9,7 +9,3 @@
 - Re-calculates layout<!-- .element: class="fragment" data-fragment-index="3" -->
 - Draws a subset of the page to various layers<!-- .element: class="fragment" data-fragment-index="4" -->
 - Then uses the GPU to composite these layers to the screen<!-- .element: class="fragment" data-fragment-index="5" -->
-
---
-
-## Web performance matters
