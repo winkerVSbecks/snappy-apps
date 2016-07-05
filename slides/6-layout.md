@@ -96,6 +96,16 @@ requestAnimationFrame(function() {
 
 --
 
+### `window.requestAnimationFrame`
+
++ Schedules a function to be executed at the next frame.
++ We can schedule all our DOM writes to run together in the next frame.
++ This leaves all DOM reads to run in the current synchronous turn.
+
+<small>[from wilsonpage.co.uk/preventing-layout-thrashing](http://wilsonpage.co.uk/preventing-layout-thrashing)</small>
+
+--
+
 ### Animating Layout Properties
 
 - The time required to perform layout calculations is directly proportional to the size of the visible DOM nodes.

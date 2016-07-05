@@ -10,7 +10,7 @@
 
 --
 
-### Styles That Affect Layout
+### Styles That Affect Paint
 
 Painting is typically a very expensive operation.
 
